@@ -1,0 +1,4 @@
+group SwaggerProviderIssueRepro
+FSharp.Core
+SwaggerProvider
+FSharp.Data.SqlClient

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DotnetFscCompilerPath>
+    </DotnetFscCompilerPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWarn>NU1701</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="json\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="C:\Users\RadekChybicki\.nuget\packages\fsharp.core\5.0.1\contentFiles\any\netstandard2.0\FSharp.Core.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="paket.references" />
+    <Compile Include="Repro.fs" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
